@@ -9,6 +9,13 @@ class MelonType(object):
     def __init__(self, code, first_harvest, color, is_seedless, is_bestseller, 
                  name):
         """Initialize a melon."""
+        
+        self.code = code
+        self.first_harvest = first_harvest
+        self.color = color
+        self.is_seedless = is_seedless
+        self.is_bestseller = is_bestseller
+        self.name = name
 
         self.pairings = []
 
@@ -16,7 +23,8 @@ class MelonType(object):
 
     def add_pairing(self, pairing):
         """Add a food pairing to the instance's pairings list."""
-
+        self.pairing = pairing
+        self.pairings.append(self.pairing)
         # Fill in the rest
 
     def update_code(self, new_code):
@@ -27,12 +35,12 @@ class MelonType(object):
 
 def make_melon_types():
     """Returns a list of current melon types."""
+    # class MelonType():
+    # all_melon_types = []
 
-    all_melon_types = []
+    # all_melon_types.append(self.name)
 
-    # Fill in the rest
-
-    return all_melon_types
+        # return all_melon_types
 
 def print_pairing_info(melon_types):
     """Prints information about each melon type's pairings."""
@@ -65,4 +73,5 @@ def get_sellability_report(melons):
     # Fill in the rest 
 
 
-
+if __name__ == "__main__":
+    muskmelon = MelonType('musk', '1998', 'green', 'seedless', 'bestseller', 'muskmelon')
