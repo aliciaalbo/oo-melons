@@ -19,14 +19,14 @@ class MelonType(object):
 
         self.pairings = []
 
- 
+
 
     def add_pairing(self, pairing):
         """Add a food pairing to the instance's pairings list."""
 
         self.pairing = pairing
         self.pairings.append(self.pairing)
- 
+
     def update_code(self, new_code):
         """Replace the reporting code with the new_code."""
 
@@ -35,12 +35,13 @@ class MelonType(object):
 
 def make_melon_types():
     """Returns a list of current melon types."""
-    # class MelonType():
-    # all_melon_types = []
+    
+    all_melon_types = []
 
-    # all_melon_types.append(self.name)
+    # for melon in MelonType:
+    all_melon_types.append(MelonType)
 
-        # return all_melon_types
+    return all_melon_types
 
 def print_pairing_info(melon_types):
     """Prints information about each melon type's pairings."""
